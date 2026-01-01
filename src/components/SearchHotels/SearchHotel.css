@@ -1,0 +1,121 @@
+
+.HotelSearchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.searchsubcontainer {
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* background-color: aliceblue; */
+  border-radius: 8px;
+}
+
+
+.checkdate-peoples {
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+}
+
+
+.only-calender,
+.only-peoples {
+  min-height: 40px;
+  min-width: 280px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.calender,
+.noofpeoples {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: white;
+}
+
+.showcities {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background: white;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+  z-index: 10;
+}
+
+.calenderContainer {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  z-index: 10;
+}
+
+
+.noOfPeople-container {
+  position: absolute;
+  top: 100%;
+  left: 55%;
+  width: 300px;
+  background: white;
+  border: 1px solid #000000;
+  padding: 10px;
+  z-index: 10;
+}
+
+.adultsSection,
+.childrensSection,
+.roomsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  margin: 8px 0;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .searchsubcontainer {
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    
+  }
+
+  .checkdate-peoples {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .only-calender,
+  .only-peoples {
+    width: 100%;
+  }
+
+  .calenderContainer,
+  .noOfPeople-container {
+    left: 0;
+  }
+}
