@@ -1,6 +1,7 @@
 .allRooms {
   width: 90%;
   margin: 0 auto;
+   min-height: 80vh;
 }
 
 .roomsAndFilters {
