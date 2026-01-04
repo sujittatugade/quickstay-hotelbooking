@@ -25,8 +25,8 @@ function Navbar() {
       });
       setBackendUserId(res.data.id);
       localStorage.setItem("userId", res.data.id);
-    } catch {
-      toast.error("User sync failed");
+    } catch (error) {
+      console.log(error);
     }
   };
 
